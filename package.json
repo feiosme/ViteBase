@@ -1,0 +1,38 @@
+{
+  "name": "vitebase",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "velocity-animate": "^1.5.2",
+    "axios": "^0.24.0",
+    "buffer": "^6.0.3",
+    "crypto": "^1.0.1",
+    "daisyui": "^1.14.5",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "pdfjs-dist": "^2.13.216",
+    "sass": "^1.49.7",
+    "sun-time": "^1.0.2",
+    "vue": "^3.2.25",
+    "vue-i18n": "^9.2.0-beta.17",
+    "vue-meta": "3.0.0-alpha.9",
+    "vue-router": "4",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^7.30.0",
+    "eslint-config-nineko": "^0.0.3",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.9",
+    "vite-plugin-svg-icons": "^1.0.5"
+  }
+}

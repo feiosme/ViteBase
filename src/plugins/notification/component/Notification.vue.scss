@@ -1,0 +1,33 @@
+.notification-transition {
+  transition-property       : transform, opacity, top;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration       : 150ms;
+}
+
+.notification-duration-300 {
+  transition-duration: 300ms;
+}
+
+.notification-ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.notification-ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.notification-translate-y-1 {
+  transform: translateX(50px);
+}
+
+.notification-translate-y-0 {
+  transform: translateX(0px);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.notification-opacity-100 {
+  opacity: 1;
+}

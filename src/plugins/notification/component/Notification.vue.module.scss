@@ -1,0 +1,250 @@
+$borderRadius: 6px;
+
+.notification {
+    position      : fixed;
+    bottom        : auto;
+    left          : auto;
+    top           : 100px;
+    bottom        : 10px;
+    right         : 0;
+    z-index       : 10000000001;
+    pointer-events: none;
+
+    .info {
+        clear        : both;
+        float        : right;
+        height       : 50px;
+        min-width    : 25%;
+        line-height  : 30px;
+        background   : #fff;
+        box-shadow   : 0 3px 16px 0 rgba(0, 0, 0, 0.25);
+        border-radius: $borderRadius 0 0 $borderRadius;
+        color        : rgb(90, 95, 105);
+        padding      : 10px 25px;
+        animation    : show 0.5s;
+        margin-bottom: 10px;
+        text-shadow  : 0 0;
+        position     : relative;
+        box-sizing   : border-box;
+
+        &:after {
+            content   : "";
+            right     : 0;
+            width     : 0;
+            bottom    : 0;
+            position  : absolute;
+            height    : 2px;
+            background: rgb(32, 150, 243);
+            animation : notification-hid-info var(--animation-duration) linear;
+        }
+
+        &:before {
+            content       : "i";
+            display       : inline-block;
+            width         : 30px;
+            height        : 30px;
+            text-align    : center;
+            border-radius : 100%;
+            background    : rgb(32, 150, 243);
+            color         : #fff;
+            margin-left   : -11px;
+            margin-right  : 11px;
+            // line-height: 34px;
+        }
+    }
+
+    .error {
+        clear        : both;
+        float        : right;
+        height       : 50px;
+        line-height  : 30px;
+        background   : #fff;
+        box-shadow   : 0 3px 16px 0 rgba(0, 0, 0, 0.25);
+        border-radius: $borderRadius 0 0 $borderRadius;
+        color        : rgb(90, 95, 105);
+        padding      : 10px 25px;
+        animation    : show 0.5s;
+        margin-bottom: 10px;
+        text-shadow  : 0 0;
+        position     : relative;
+        box-sizing   : border-box;
+
+        &:after {
+            content   : "";
+            right     : 0;
+            width     : 0;
+            bottom    : 0;
+            position  : absolute;
+            height    : 2px;
+            background: #f66;
+            animation : notification-hid-info var(--animation-duration) linear;
+        }
+
+        &:before {
+            content       : "i";
+            display       : inline-block;
+            width         : 30px;
+            height        : 30px;
+            text-align    : center;
+            border-radius : 100%;
+            background    : #f66;
+            color         : #fff;
+            margin-left   : -11px;
+            margin-right  : 11px;
+            // line-height: 34px;
+        }
+    }
+
+    .success {
+        clear        : both;
+        float        : right;
+        height       : 50px;
+        line-height  : 30px;
+        background   : #fff;
+        box-shadow   : 0 3px 16px 0 rgba(0, 0, 0, 0.25);
+        border-radius: $borderRadius 0 0 $borderRadius;
+        color        : rgb(90, 95, 105);
+        padding      : 10px 25px;
+        animation    : show 0.5s;
+        margin-bottom: 10px;
+        text-shadow  : 0 0;
+        position     : relative;
+        box-sizing   : border-box;
+
+        &:after {
+            content   : "";
+            right     : 0;
+            width     : 0;
+            bottom    : 0;
+            position  : absolute;
+            height    : 2px;
+            background: rgb(75, 175, 80);
+            animation : notification-hid-info var(--animation-duration) linear;
+        }
+
+        &:before {
+            content       : "✓";
+            display       : inline-block;
+            width         : 30px;
+            height        : 30px;
+            text-align    : center;
+            border-radius : 100%;
+            background    : rgb(75, 175, 80);
+            color         : #fff;
+            margin-left   : -11px;
+            margin-right  : 11px;
+            // line-height: 34px;
+        }
+    }
+
+    .warning {
+        clear        : both;
+        float        : right;
+        height       : 50px;
+        line-height  : 30px;
+        background   : #fff;
+        box-shadow   : 0 3px 16px 0 rgba(0, 0, 0, 0.25);
+        border-radius: $borderRadius 0 0 $borderRadius;
+        color        : rgb(90, 95, 105);
+        padding      : 10px 25px;
+        animation    : show 0.5s;
+        margin-bottom: 10px;
+        text-shadow  : 0 0;
+        position     : relative;
+        box-sizing   : border-box;
+
+        &:after {
+            content   : "";
+            right     : 0;
+            width     : 0;
+            bottom    : 0;
+            position  : absolute;
+            height    : 2px;
+            background: rgb(251, 140, 0);
+            animation : notification-hid-info var(--animation-duration) linear;
+        }
+
+        &:before {
+            content       : "i";
+            display       : inline-block;
+            width         : 30px;
+            height        : 30px;
+            text-align    : center;
+            border-radius : 100%;
+            background    : rgb(251, 140, 0);
+            color         : #fff;
+            margin-left   : -11px;
+            margin-right  : 11px;
+            // line-height: 34px;
+        }
+    }
+
+    .code {
+        box-shadow   : 0 3px 16px 0 rgba(0, 0, 0, 0.25);
+        border-radius: $borderRadius 0 0 $borderRadius;
+        animation    : show 0.5s;
+        margin-top   : calc(50vh - 155px);
+        float        : right;
+        overflow     : hidden;
+        width        : 150px;
+        background   : #fff;
+
+        h1 {
+            font-size: 1.2em;
+            margin   : 0;
+            padding  : 15px;
+        }
+
+        img {
+            display: block;
+            width  : 100%;
+        }
+    }
+
+    .hide {
+        animation: hide 0.5s !important;
+    }
+}
+
+@keyframes show {
+    0% {
+        transform: translateX(50px);
+        opacity  : 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity  : 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        transform: translateX(0px);
+        opacity  : 1;
+    }
+
+    100% {
+        transform: translateX(50px);
+        opacity  : 0;
+    }
+}
+
+
+@keyframes notification-hid-info {
+    0% {
+        width: 100%;
+    }
+
+    5% {
+        width: 100%;
+    }
+
+    98% {
+        width: 0%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
