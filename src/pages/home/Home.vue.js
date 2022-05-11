@@ -9,8 +9,16 @@ export default {
     setup() {
         const { t } = useI18n();
 
+        const notify = () => {
+            window.$notify({
+                message: 'message',
+                duration: 3000,
+                type: 'success'
+            });
+        };
         return {
-            t
+            t,
+            notify
         };
     }
 };
